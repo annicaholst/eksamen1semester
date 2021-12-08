@@ -1,0 +1,35 @@
+/**
+ * projekt: eksamen på 1. semester multimediedesign
+ **/
+
+/* Adobe fonts */
+@import url("https://use.typekit.net/vca8ebd.css");
+/* font-family: semplicitapro, sans-serif; font-weight: 300; font-style: normal; */
+@import url("https://use.typekit.net/vca8ebd.css");
+/* font-family: marigny, sans-serif; font-weight: 500; font-style: italic; */
+
+/* Variabler*/
+:root {
+  /* farver */
+  --offwhite: #f7f9f8;
+  --lightgreen: #dde5dc;
+  --green: #accbac;
+  --darkgreen: #819a8d;
+  --red: #cd1d1d;
+
+  /* fonte */
+  --overskrift: 'marigny', sans-serif; /* overskrifter */
+  --brødtekst: 'semplicitapro', sans-serif; /* brødtekst */
+
+}
+
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Wrap */
+  #wrap {
+    min-height: 100vh;
+    margin: auto;
+   }
