@@ -21,6 +21,10 @@
   --overskrift: 'marigny', sans-serif; /* overskrifter */
   --brødtekst: 'semplicitapro', sans-serif; /* brødtekst */
 
+/* teksturer ("fliselagte baggrunde") */
+
+--baggrund: url('../images/baggrund.png');
+
 }
 
   /* Smooth scroll */
@@ -152,15 +156,16 @@
    }
 
    footer{
-   background-color: var(--lightgreen);
    font-family: var(--brødtekst);
    font-size: 20px;
    text-align: center;
-   color: var(--darkgreen);
+   background-image: var(--baggrund);
+   background-size: 100% auto;
+
    }
 
    footer a{
-     color: var(--darkgreen);
+     color: var(--lightgreen);
      text-decoration: none;
    }
 
@@ -177,7 +182,7 @@
      margin-left: auto;
      margin-right: auto;
      padding: 20px;
-     background-color: var(--lightgreen);
+     background-color: inherit;
    }
 
 
@@ -192,7 +197,7 @@
        top: 1.5rem;
        right: 1.5rem;
        display: flex;
-       flex-direction: column;  
+       flex-direction: column;
        justify-content: space-between;
      }
      .burgermenu .bar{
@@ -204,11 +209,25 @@
      .dropdown{
        display: none;
      }
+
+     /* footer ved lille skærm */
+     .ikoner {
+       max-width: 50px;
+       padding: 25px;
+     }
    }
 
 
+
+
    /* Small devices (portrait tablets and large phones, 600px and up) */
-   @media only screen and (min-width: 601px) {}
+   @media only screen and (min-width: 601px) {
+
+     /* navbar burgermenu */
+       .burgermenu{
+         display:none;
+       }
+   }
 
 
    /* Medium devices (landscape tablets, 768px and up) */
@@ -226,10 +245,10 @@
         }
         .column {
           width: 50%;
-          background-color: var(--lightgreen);
+          background-image: var(--baggrund);
           font-family: var(--brødtekst);
           text-align: center;
-          color: var(--darkgreen);
+          color: var(--lightgreen);
         }
 
    }
@@ -250,10 +269,10 @@
         }
         .column {
           width: 50%;
-          background-color: var(--lightgreen);
+          background-image: var(--baggrund);
           font-family: var(--brødtekst);
           text-align: center;
-          color: var(--darkgreen);
+          color: var(--lightgreen);
         }
       }
 
@@ -275,10 +294,12 @@
         }
         .column {
           width: 50%;
-          background-color: var(--lightgreen);
+          background-image: var(--baggrund);
+
           font-family: var(--brødtekst);
           text-align: center;
-          color: var(--darkgreen);
+          color: var(--lightgreen);
         }
+
 
    }
