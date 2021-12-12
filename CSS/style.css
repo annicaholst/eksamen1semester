@@ -139,19 +139,72 @@
 
 
 
-   /* Footer */
+
+   /* FOOTER */
+   #copyright {
+     font-size: 15px;
+     text-align: center;
+   }
+
+   .copyright {
+     background-color: white;
+     padding: 1em;
+   }
+
+   footer{
+   background-color: var(--lightgreen);
+   font-family: var(--brødtekst);
+   font-size: 20px;
+   text-align: center;
+   color: var(--darkgreen);
+   }
+
+   footer a{
+     color: var(--darkgreen);
+     text-decoration: none;
+   }
+
+   footer a:hover{
+     color: var(--green);
+   }
+
+   .footer {
+     font-weight: bold;
+   }
 
    .ikoner {
      display: inline-block;
      margin-left: auto;
      margin-right: auto;
      padding: 20px;
+     background-color: var(--lightgreen);
    }
 
 
 
+
    /* Extra small devices (phones, 600px and down) */
-   @media only screen and (max-width: 600px) {}
+   @media only screen and (max-width: 600px) {
+
+     /* navbar burgermenu ved lille skærm */
+     .burgermenu{
+       position: absolute;
+       top: 1.5rem;
+       right: 1.5rem;
+       display: flex;
+       flex-direction: column;  
+       justify-content: space-between;
+     }
+     .burgermenu .bar{
+       height: 3px;
+       width: 100%;
+       background-color: var(--black);
+       border-radius: 10px;
+     }
+     .dropdown{
+       display: none;
+     }
+   }
 
 
    /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -163,6 +216,22 @@
      .burgermenu{
        display:none;
      }
+
+
+     /* FOOTER */
+    /* kolonner til footer på computer */
+        .row{
+          display: flex;
+          width: 100%;
+        }
+        .column {
+          width: 50%;
+          background-color: var(--lightgreen);
+          font-family: var(--brødtekst);
+          text-align: center;
+          color: var(--darkgreen);
+        }
+
    }
 
 
@@ -171,7 +240,23 @@
      .burgermenu{
        display:none;
      }
-   }
+
+
+     /* FOOTER */
+    /* kolonner til footer på computer */
+        .row{
+          display: flex;
+          width: 100%;
+        }
+        .column {
+          width: 50%;
+          background-color: var(--lightgreen);
+          font-family: var(--brødtekst);
+          text-align: center;
+          color: var(--darkgreen);
+        }
+      }
+
 
 
    /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -180,4 +265,20 @@
      .burgermenu{
        display:none;
      }
+
+
+     /* FOOTER */
+    /* kolonner til footer på computer */
+        .row{
+          display: flex;
+          width: 100%;
+        }
+        .column {
+          width: 50%;
+          background-color: var(--lightgreen);
+          font-family: var(--brødtekst);
+          text-align: center;
+          color: var(--darkgreen);
+        }
+
    }
