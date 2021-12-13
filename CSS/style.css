@@ -11,11 +11,11 @@
 /* Variabler*/
 :root {
   /* farver */
-  --offwhite: #f7f9f8;
-  --lightgreen: #dde5dc;
-  --green: #accbac;
-  --darkgreen: #819a8d;
-  --red: #cd1d1d;
+  --offwhite: #fafcfb;
+  --lightgreen: #dee6dd;
+  --green: #adccad;
+  --darkgreen: #829b8e;
+  --red: #ce1d1d;
 
   /* fonte */
   --overskrift: 'marigny', sans-serif; /* overskrifter */
@@ -27,6 +27,9 @@
 
 }
 
+body {
+  background-color: var(--lightgreen);
+}
   /* Smooth scroll */
   html {
     scroll-behavior: smooth;
@@ -41,7 +44,19 @@
 
   /* Typografi */
 
+h1 {
+  font-family: var(--overskrift);
+  text-align: center;
+}
 
+p {
+  font-family: var(--brødtekst);
+  text-align: center;
+}
+
+.læs {
+  font-size: 100%;
+}
 
   /* Menubar*/
    #navigation {
@@ -141,6 +156,34 @@
    }
 
 
+  /* Forside */
+  video {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .amomel {
+    width: 100%;
+    height: auto;
+  }
+
+  .konkurrence {
+    display: block;
+    border: 4px solid red;
+    background-color: var(--offwhite);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 30%;
+  }
+
+  .konkindhold img {
+    max-width: 100%
+  }
+
 
 
 
@@ -215,6 +258,16 @@
        max-width: 50px;
        padding: 25px;
      }
+
+     /*Typografi*/
+      p {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 10%;
+        font-size: 1.4em;
+
+      }
+
    }
 
 
@@ -227,6 +280,15 @@
        .burgermenu{
          display:none;
        }
+
+      /*Typografi*/
+        p {
+          margin-left: 10%;
+          margin-right: 10%;
+          margin-bottom: 10%;
+          font-size: 1.4em;
+
+        }
    }
 
 
@@ -235,6 +297,28 @@
      .burgermenu{
        display:none;
      }
+
+    /*Forside*/
+
+    video {
+      width: 80%;
+    }
+
+
+    .amomel {
+      width: 100%;
+      height: auto;
+    }
+
+    .forsiderow {
+      display: flex;
+    }
+
+    .forsiderow p {
+      padding-top: 10%;
+    }
+
+
 
 
      /* FOOTER */
@@ -258,6 +342,24 @@
    @media only screen and (min-width: 992px) {
      .burgermenu{
        display:none;
+     }
+
+     /*Forside*/
+     video {
+       width: 80%;
+     }
+
+     .amomel {
+       width: 100%;
+       height: auto;
+     }
+
+     .forsiderow {
+       display: flex;
+     }
+
+     .forsiderow p {
+       padding-top: 10%;
      }
 
 
@@ -285,6 +387,15 @@
        display:none;
      }
 
+     /*Forside*/
+     video {
+       width: 80%;
+     }
+
+     .amomel {
+       width: 50%;
+       height: auto;
+     }
 
      /* FOOTER */
     /* kolonner til footer på computer */
