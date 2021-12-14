@@ -17,6 +17,7 @@
   --darkgreen: #829b8e;
   --red: #ce1d1d;
 
+
   /* fonte */
   --overskrift: 'marigny', sans-serif; /* overskrifter */
   --brødtekst: 'semplicitapro', sans-serif; /* brødtekst */
@@ -45,6 +46,11 @@ body {
   /* Typografi */
 
 h1 {
+  font-family: var(--overskrift);
+  text-align: center;
+}
+
+h2 {
   font-family: var(--overskrift);
   text-align: center;
 }
@@ -233,6 +239,32 @@ p {
     text-decoration: none;
   }
 
+  .melprodukt {
+    width: 100%;
+    height: auto;
+  }
+
+
+  /* Underside - Inspiration */
+  .infographic {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .voila img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .inspocolumn p {
+    font-style: italic;
+  }
+
 
    /* FOOTER */
    #copyright {
@@ -247,7 +279,7 @@ p {
 
    footer{
    font-family: var(--brødtekst);
-   font-size: 20px;
+   font-size: 18px;
    text-align: center;
    background-image: var(--baggrund);
    background-size: 100% auto;
@@ -271,7 +303,7 @@ p {
      display: inline-block;
      margin-left: auto;
      margin-right: auto;
-     padding: 20px;
+     margin-top: 3%;
      background-color: inherit;
    }
 
@@ -300,6 +332,14 @@ p {
        display: none;
      }
 
+     /* Underside - Inspiration */
+
+     .voila h2 {
+       display: none;
+     }
+
+  }
+
      /* footer ved lille skærm */
      .ikoner {
        max-width: 50px;
@@ -315,7 +355,6 @@ p {
 
       }
 
-   }
 
 
 
@@ -335,6 +374,12 @@ p {
           margin-bottom: 10%;
           font-size: 1.4em;
 
+        }
+
+        /* Underside - Inspiration */
+
+        .voila h2 {
+          display: none;
         }
    }
 
@@ -366,7 +411,15 @@ p {
       font-size: 1.2em;
     }
 
+    /* Underside - Inspiration */
+    .infographic {
+      width: 70%;
+    }
 
+    .voila h1 {
+        display: block;
+        text-align: center;
+      }
 
      /* FOOTER */
     /* kolonner til footer på computer */
@@ -382,8 +435,16 @@ p {
           color: var(--lightgreen);
         }
 
-   }
+        .column p {
+          font-size: 18px;
+        }
 
+        .ikoner {
+          padding-right: 5%;
+        }
+
+
+     }
 
    /* Large devices (laptops/desktops, 992px and up) */
    @media only screen and (min-width: 992px) {
@@ -430,6 +491,56 @@ p {
       font-size: 1.2em;
     }
 
+    .melprodukt {
+      width: 80%;
+      height: auto;
+    }
+
+    .produktercolumn h1 {
+      font-size: 2.5em;
+      padding-top: 50%;
+    }
+
+    .butik {
+      margin: 2%;
+    }
+
+
+    /* Underside - Inspiration */
+    .infographic {
+      width: 55%;
+    }
+
+    .voilarow {
+      display: flex;
+      margin-bottom: 10%;
+    }
+
+    .voila h1 {
+      display: none;
+    }
+
+    .voila h2 {
+      display: block;
+      text-align: center;
+    }
+
+    .voila img {
+  width: 70%;
+    }
+
+    /* opskrift */
+
+    .insporow {
+      display: flex;
+    }
+
+    .inspocolumn {
+      border-left: 1px solid black;
+      margin-bottom: 10%;
+    }
+
+
 
 
     /* FOOTER */
@@ -465,6 +576,8 @@ p {
        width: 50%;
        height: auto;
      }
+
+
 
      /* FOOTER */
     /* kolonner til footer på computer */
