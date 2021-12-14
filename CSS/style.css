@@ -55,6 +55,21 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-family: var(--brødtekst);
+  text-align: center;
+  font-size: 1.4em;
+}
+
+h4 {
+  font-family: var(--brødtekst);
+  text-align: center;
+  font-weight: lighter;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+
 p {
   font-family: var(--brødtekst);
   text-align: center;
@@ -265,6 +280,17 @@ p {
     font-style: italic;
   }
 
+    /* Underside - Om Amo */
+
+    .omamorow img {
+      width: 80%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20%;
+    }
+
+
 
    /* FOOTER */
    #copyright {
@@ -353,6 +379,10 @@ p {
         margin-bottom: 10%;
         font-size: 1.4em;
 
+      }
+
+      h4 {
+        font-size: 1.4em;
       }
 
 
@@ -541,7 +571,26 @@ p {
     }
 
 
+    /* Underside - Om Amo*/
 
+    .omamorow {
+      display: flex;
+      padding-right: 8%;
+    }
+
+    .omamorow img {
+      width: 110%;
+      padding-top: 20%;
+    }
+
+    .omamorow p {
+      text-align: left;
+    }
+
+    .omamorow h1 {
+      text-align: left;
+      padding-left: 10%;
+    }
 
     /* FOOTER */
     /* kolonner til footer på computer */
