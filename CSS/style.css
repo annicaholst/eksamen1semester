@@ -477,7 +477,6 @@ p {
         }
         .column {
           width: 50%;
-          background-image: var(--baggrund);
           font-family: var(--brødtekst);
           text-align: center;
           color: var(--lightgreen);
@@ -489,6 +488,11 @@ p {
 
         .ikoner {
           padding-right: 5%;
+        }
+
+        footer{
+        background-image: var(--baggrund);
+        background-size: 100% auto;
         }
 
 
@@ -629,10 +633,14 @@ p {
         }
         .column {
           width: 50%;
-          background-image: var(--baggrund);
           font-family: var(--brødtekst);
           text-align: center;
           color: var(--lightgreen);
+        }
+
+        footer{
+        background-image: var(--baggrund);
+        background-size: 100% auto;
         }
       }
 
@@ -672,10 +680,14 @@ p {
         }
         .column {
           width: 50%;
-          background-image: var(--baggrund);
           font-family: var(--brødtekst);
           text-align: center;
           color: var(--lightgreen);
+        }
+
+        footer{
+        background-image: var(--baggrund);
+        background-size: 100% auto;
         }
 
    }
