@@ -25,6 +25,7 @@
 /* teksturer ("fliselagte baggrunde") */
 
 --baggrund: url('../images/baggrund.png');
+--baggrundmobil: url('../images/baggrund-kopi.png');
 
 }
 
@@ -36,10 +37,17 @@ body {
     scroll-behavior: smooth;
   }
 
-  /* Wrap */
-  #wrap {
-    min-height: 100vh;
-    margin: auto;
+
+  /* margin på hele siden */
+   body {
+     margin: 0 auto;
+   }
+
+
+  /* margin på indhold */
+  main {
+    margin-right: 5%;
+    margin-left: 5%;
    }
 
 
@@ -204,7 +212,10 @@ p {
   }
 
   .konkindhold img {
-    max-width: 100%
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 
 
@@ -300,7 +311,6 @@ p {
 
    .copyright {
      background-color: white;
-     padding: 1em;
    }
 
    footer{
@@ -364,8 +374,6 @@ p {
        display: none;
      }
 
-  }
-
      /* footer ved lille skærm */
      .ikoner {
        max-width: 50px;
@@ -385,8 +393,12 @@ p {
         font-size: 1.4em;
       }
 
+      footer{
+      background-image: var(--baggrundmobil);
+      background-size: 100% auto;
+      }
 
-
+     }
 
 
    /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -411,6 +423,12 @@ p {
         .voila h2 {
           display: none;
         }
+
+        footer{
+        background-image: var(--baggrundmobil);
+        background-size: 100% auto;
+        }
+
    }
 
 
@@ -484,7 +502,9 @@ p {
 
      /*Forside*/
      video {
-       width: 80%;
+       padding-top: 5%;
+        padding-bottom: 5%;
+       width: 70%;
      }
 
      .amomel {
@@ -499,6 +519,15 @@ p {
      .forsiderow p {
        padding-top: 10%;
        font-size: 1.2em;
+     }
+
+     .konkurrence {
+       width: 60%;
+     }
+
+     .konkindhold img {
+       max-width: 80%
+
      }
 
 
@@ -612,17 +641,24 @@ p {
    /* Extra large devices (large laptops and desktops, 1200px and up) */
    @media only screen and (min-width: 1200px) {
 
+    main {
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+
      .burgermenu{
        display:none;
      }
 
      /*Forside*/
      video {
-       width: 80%;
+       padding-top: 5%;
+       padding-bottom: 5%;
+       width: 70%;
      }
 
      .amomel {
-       width: 50%;
+       width: 70%;
        height: auto;
      }
 
@@ -637,11 +673,9 @@ p {
         .column {
           width: 50%;
           background-image: var(--baggrund);
-
           font-family: var(--brødtekst);
           text-align: center;
           color: var(--lightgreen);
         }
-
 
    }
