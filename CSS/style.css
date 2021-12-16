@@ -288,6 +288,22 @@ p {
     padding-bottom: 10%;
   }
 
+  /* Underside - opskrifter */
+
+  .opskriftside {
+    display: flex;
+  }
+
+  .opskrifter {
+    background-color: rgba(130, 155, 142, 0.4);  /* darkgreen with 0.4 opacity */
+    padding: 2%;
+    margin: 2%;
+  }
+
+  .opskrifter img {
+    width: 200px;
+  }
+
 
   /* Underside - Inspiration */
   .infographic {
