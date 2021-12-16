@@ -193,11 +193,16 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20%;
   }
 
   .amomel {
     width: 100%;
     height: auto;
+  }
+
+  #amo {
+    font-weight: bold;
   }
 
   .konkurrence {
@@ -270,6 +275,19 @@ p {
     height: auto;
   }
 
+  .produktercolumn {
+  background-color: rgba(130, 155, 142, 0.4);  /* darkgreen with 0.4 opacity */
+  padding: 5%;
+  }
+
+  .produktercolumn img {
+    padding-bottom: 10%;
+  }
+
+  .produkterrow {
+    padding-bottom: 10%;
+  }
+
 
   /* Underside - Inspiration */
   .infographic {
@@ -286,6 +304,21 @@ p {
     margin-right: auto;
   }
 
+  /*opskriften*/
+  .insporow {
+    margin-bottom: 10%;
+  }
+  .inspocolumn {
+    background: rgba(130, 155, 142, 0.2);  /* darkgreen with 0.2 opacity */
+    padding: 2%;
+
+  }
+
+  .ingredienser {
+    background: rgba(130, 155, 142, 0.4);  /* darkgreen with 0.4 opacity */
+    padding: 2%;
+  }
+
 
   .inspocolumn p {
     font-style: italic;
@@ -293,13 +326,32 @@ p {
 
     /* Underside - Om Amo */
 
-    .omamorow img {
+    .omamorow1 {
+      background: rgba(130, 155, 142, 0.4);  /* darkgreen with 0.4 opacity */
+      padding-top: 2%;
+      margin-top: 10%;
+    }
+
+    .omamorow2 {
+      background: rgba(130, 155, 142, 0.2);  /* darkgreen with 0.2 opacity */
+      padding-top: 2%;
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
+
+
+
+    .omamorow1 img, .omamorow2 img {
       width: 80%;
       display: block;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 20%;
+      padding-bottom: 10%;
     }
+
+
+
 
 
 
@@ -368,6 +420,29 @@ p {
        display: none;
      }
 
+     /*typografi*/
+
+     #billedetekst {
+       font-size: 2em;
+     }
+
+     h1 {
+       font-size: 1.7em;
+     }
+
+
+     /*forside*/
+
+     .forsidetekst {
+       background-color: rgba(130, 155, 142, 0.4);  /* darkgreen with 0.4 opacity */
+       padding: 5%;
+
+     }
+
+      .forsiderow {
+        margin-bottom: 10%;
+      }
+
      /* Underside - Inspiration */
 
      .voila h2 {
@@ -393,10 +468,13 @@ p {
         font-size: 1.4em;
       }
 
+
+   /*footer*/
       footer{
       background-image: var(--baggrundmobil);
       background-size: 100% auto;
       }
+
 
      }
 
@@ -410,6 +488,11 @@ p {
        }
 
       /*Typografi*/
+
+      h1 {
+        font-size: 1.8em;
+      }
+
         p {
           margin-left: 10%;
           margin-right: 10%;
@@ -418,22 +501,44 @@ p {
 
         }
 
+        /*forside*/
+
+        .forsidetekst {
+          background-color: rgba(130, 155, 142, 0.4);  /* darkgreen with 0.4 opacity */
+          padding: 5%;
+
+        }
+
+         .forsiderow {
+           margin-bottom: 10%;
+         }
+
         /* Underside - Inspiration */
 
         .voila h2 {
           display: none;
         }
 
+
+    /*footer*/
         footer{
         background-image: var(--baggrundmobil);
         background-size: 100% auto;
         }
 
-   }
+     }
 
 
    /* Medium devices (landscape tablets, 768px and up) */
    @media only screen and (min-width: 768px) {
+
+     /*typografi*/
+
+     #billedetekst {
+       font-size: 3em;
+     }
+
+    /*navigation*/
      .burgermenu{
        display:none;
      }
@@ -450,14 +555,45 @@ p {
       height: auto;
     }
 
+    .forsidetekst {
+     border: rgba(130, 155, 142, 0.4);  /* darkgreen with 0.4 opacity */
+     border-radius: 400px;
+
+    }
+
     .forsiderow {
       display: flex;
     }
 
     .forsiderow p {
       padding-top: 10%;
-      font-size: 1.2em;
+      font-size: 1em;
     }
+
+
+/* Underside - produkter */
+.produkterrow2 {
+  display: inline-flex;
+  flex-direction: row-reverse;
+
+}
+
+.produktercolumn3 {
+  margin-right: 20%;
+}
+
+
+
+.melprodukt {
+  width: 80%;
+  height: auto;
+}
+
+.produktercolumn3 h1 {
+  font-size: 2em;
+  padding-top: 30%;
+}
+
 
     /* Underside - Inspiration */
     .infographic {
@@ -468,6 +604,13 @@ p {
         display: block;
         text-align: center;
       }
+
+      /* opskrift */
+
+      .insporow {
+        display: flex;
+      }
+
 
      /* FOOTER */
     /* kolonner til footer på computer */
@@ -500,8 +643,16 @@ p {
 
    /* Large devices (laptops/desktops, 992px and up) */
    @media only screen and (min-width: 992px) {
+
+    /*navigation*/
      .burgermenu{
        display:none;
+     }
+
+     /*typografi*/
+
+     #billedetekst {
+       font-size: 3em;
      }
 
      /*Forside*/
@@ -516,12 +667,18 @@ p {
        height: auto;
      }
 
+     .forsidetekst {
+      border: rgba(130, 155, 142, 0.4);  /* darkgreen with 0.4 opacity */
+      border-radius: 400px;
+
+     }
+
      .forsiderow {
        display: flex;
+       margin-top: 5%;
      }
 
      .forsiderow p {
-       padding-top: 10%;
        font-size: 1.2em;
      }
 
@@ -545,22 +702,38 @@ p {
 
     .produkterrow {
       display: flex;
-      margin-left: 10%;
-      margin-right: 15%;
-      flex-direction: row-reverse;
+
     }
 
     .produkterrow p {
       font-size: 1.2em;
     }
 
+    .produktercolumn img {
+      width: 300px;
+    padding-top: 15%;
+
+    }
+
+    .produkterrow2 {
+      display: inline-flex;
+      flex-direction: row-reverse;
+
+    }
+
+    .produktercolumn3 {
+      margin-right: 20%;
+    }
+
+
+
     .melprodukt {
       width: 80%;
       height: auto;
     }
 
-    .produktercolumn h1 {
-      font-size: 2.5em;
+    .produktercolumn3 h1 {
+      font-size: 2.2em;
       padding-top: 50%;
     }
 
@@ -590,6 +763,7 @@ p {
 
     .voila img {
   width: 70%;
+  padding-top: 12%;
     }
 
     /* opskrift */
@@ -598,29 +772,24 @@ p {
       display: flex;
     }
 
-    .inspocolumn {
-      border-left: 1px solid black;
-      margin-bottom: 10%;
-    }
-
 
     /* Underside - Om Amo*/
 
-    .omamorow {
+    .omamorow1, .omamorow2 {
       display: flex;
       padding-right: 8%;
     }
 
-    .omamorow img {
+    .omamorow1 img, .omamorow2 img {
       width: 110%;
       padding-top: 20%;
     }
 
-    .omamorow p {
+    .omamorow1 p, .omamorow2 p {
       text-align: left;
     }
 
-    .omamorow h1 {
+    .omamorow1 h1, .omamorow2 h1 {
       text-align: left;
       padding-left: 10%;
     }
@@ -649,11 +818,19 @@ p {
    /* Extra large devices (large laptops and desktops, 1200px and up) */
    @media only screen and (min-width: 1200px) {
 
-    main {
-      margin-right: 10%;
-      margin-left: 10%;
+     main {
+       margin-right: 10%;
+       margin-left: 10%;
+     }
+
+    /*typografi*/
+
+    #billedetekst {
+      font-size: 3em;
     }
 
+
+  /*navigation*/
      .burgermenu{
        display:none;
      }
@@ -666,7 +843,7 @@ p {
      }
 
      .amomel {
-       width: 70%;
+       width: 90%;
        height: auto;
      }
 
