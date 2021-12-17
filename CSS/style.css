@@ -188,12 +188,16 @@ p {
 
 
   /* Forside */
+
+  #oplev {
+  padding-top: 5%;
+  }
   video {
     width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
   }
 
   .amomel {
@@ -213,7 +217,7 @@ p {
     margin-right: auto;
     padding: 20px;
     width: 80%;
-    margin-bottom: 30%;
+    margin-bottom: 20%;
   }
 
   .konkindhold img {
@@ -290,18 +294,26 @@ p {
 
   /* Underside - opskrifter */
 
-  .opskriftside {
-    display: flex;
-  }
-
   .opskrifter {
     background-color: rgba(130, 155, 142, 0.4);  /* darkgreen with 0.4 opacity */
-    padding: 2%;
-    margin: 2%;
-  }
+    padding: 1%;
+    margin: 5%;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
 
   .opskrifter img {
     width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .opskrifter img:hover {
+    width: 215px;
   }
 
 
@@ -426,12 +438,7 @@ p {
        flex-direction: column;
        justify-content: space-between;
      }
-     .burgermenu .bar{
-       height: 3px;
-       width: 100%;
-       background-color: var(--black);
-       border-radius: 10px;
-     }
+
      .dropdown{
        display: none;
      }
@@ -608,6 +615,19 @@ p {
 .produktercolumn3 h1 {
   font-size: 2em;
   padding-top: 30%;
+}
+
+
+/* Underside - Opskrifter */
+.opskriftside{
+  display: flex;
+}
+
+.opskrifter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 3%;
 }
 
 
@@ -862,6 +882,7 @@ p {
        width: 90%;
        height: auto;
      }
+
 
 
 
