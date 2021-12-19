@@ -380,9 +380,6 @@ p {
 
 
 
-
-
-
    /* FOOTER */
    #copyright {
      font-size: 15px;
@@ -423,8 +420,9 @@ p {
      background-color: inherit;
    }
 
-
-
+    .ikoner:hover {
+      opacity: 0.8;
+    }
 
    /* Extra small devices (phones, 600px and down) */
    @media only screen and (max-width: 600px) {
@@ -574,8 +572,7 @@ p {
 
 
     .amomel {
-      width: 100%;
-      height: auto;
+      width: 300px;
     }
 
     .forsidetekst {
@@ -591,6 +588,10 @@ p {
     .forsiderow p {
       padding-top: 10%;
       font-size: 1em;
+    }
+
+    .konkindhold img {
+      width: 400px;
     }
 
 
@@ -614,7 +615,7 @@ p {
 
 .produktercolumn3 h1 {
   font-size: 2em;
-  padding-top: 30%;
+  padding-top: 25%;
 }
 
 
@@ -699,9 +700,10 @@ p {
      }
 
      .amomel {
-       width: 100%;
-       height: auto;
+       width: 400px;
+
      }
+
 
      .forsidetekst {
       border: rgba(130, 155, 142, 0.4);  /* darkgreen with 0.4 opacity */
@@ -770,7 +772,7 @@ p {
 
     .produktercolumn3 h1 {
       font-size: 2.2em;
-      padding-top: 50%;
+      padding-top: 25%;
     }
 
     .butik {
@@ -879,8 +881,7 @@ p {
      }
 
      .amomel {
-       width: 90%;
-       height: auto;
+       width: 500px;
      }
 
 
